@@ -193,7 +193,6 @@ class Foo5 implements AbsFoo {
 
 class Animal {
   protected name: string
-
   protected constructor(theName: string) {
     this.name = theName
   }
@@ -204,6 +203,7 @@ class Bird extends Animal {
     super(name)
   }
 }
-const a = new Bird('')
+const a = new Animal('animal')
+const b = new Bird('bird')
 
 export {}
